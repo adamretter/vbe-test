@@ -1,0 +1,10 @@
+language: java
+
+dist: xenial
+
+jdk:
+  - openjdk8
+  - openjdk9
+  - openjdk11
+  - openjdk13
+  - openjdk14

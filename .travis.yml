@@ -11,3 +11,9 @@ jdk:
   - openjdk13
   - openjdk14
   - openjdk15
+
+env:
+  - JAVA_ARG_LINE=""
+  - JAVA_ARG_LINE="-Xint"  # Interpreted, i.e. no JIT
+
+script: mvn test -B -DargLine="$JAVA_ARG_LINE"

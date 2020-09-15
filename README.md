@@ -51,19 +51,19 @@ Tested on macOS Catalina (10.15.6) with Intel Core i9. Similar results have also
 | 11.0.8+10     | HotSpot    | Yes   | Yes    |
 | 11.0.8+10     | J9         | No    | Yes    |
 | 11.0.8+10     | J9         | Yes   | Yes    |
-| 12.0.2+10     | HotSpot    | No    | FAIL   |
+| 12.0.2+10     | HotSpot    | No    | **FAIL**   |
 | 12.0.2+10     | HotSpot    | Yes   | Yes    |
 | 12.0.2+10     | J9         | No    | Yes    |
 | 12.0.2+10     | J9         | Yes   | Yes    |
-| 13.0.2+8      | HotSpot    | No    | FAIL   |
+| 13.0.2+8      | HotSpot    | No    | **FAIL**   |
 | 13.0.2+8      | HotSpot    | Yes   | Yes    |
 | 13.0.2+8      | J9         | No    | Yes    |
 | 13.0.2+8      | J9         | Yes   | Yes    |
-| 14.0.2+12     | HotSpot    | No    | FAIL   |
+| 14.0.2+12     | HotSpot    | No    | **FAIL**   |
 | 14.0.2+12     | HotSpot    | Yes   | Yes    |
 | 14.0.2+12     | J9         | No    | Yes    |
 | 14.0.2+12     | J9         | Yes   | Yes    |
-| (jdk.java.net) 15+36-1562    | HotSpot    | No    | FAIL   |
+| (jdk.java.net) 15+36-1562    | HotSpot    | No    | **FAIL**   |
 | (jdk.java.net) 15+36-1562    | HotSpot    | Yes   | Yes    |
 
 ## Travis CI results

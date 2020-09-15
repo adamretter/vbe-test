@@ -63,8 +63,8 @@ Tested on macOS Catalina (10.15.6) with Intel Core i9. Similar results have also
 | 14.0.2+12     | HotSpot    | Yes   | Yes    |
 | 14.0.2+12     | J9         | No    | Yes    |
 | 14.0.2+12     | J9         | Yes   | Yes    |
-| 15+36-1562    | HotSpot    | No    | FAIL   |
-| 15+36-1562    | HotSpot    | Yes   | Yes    |
+| (jdk.java.net) 15+36-1562    | HotSpot    | No    | FAIL   |
+| (jdk.java.net) 15+36-1562    | HotSpot    | Yes   | Yes    |
 
 ## Travis CI results
 

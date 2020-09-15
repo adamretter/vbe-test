@@ -15,5 +15,6 @@ jdk:
 env:
   - JAVA_ARG_LINE=""
   - JAVA_ARG_LINE="-Xint"  # Interpreted, i.e. no JIT
+  - JAVA_ARG_LINE="-XX:TieredStopAtLevel=3"  # Just C1 not C2
 
 script: mvn test -B -DargLine="$JAVA_ARG_LINE"

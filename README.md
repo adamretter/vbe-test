@@ -33,6 +33,11 @@ if (skip) {
 by passing `-Xint` to Java (HotSpot) causes the tests to pass.
     
     If using Surefire and JUnit, we can specify `mvn test -DargLine=-Xint`.
+    
+* [mbien](https://github.com/) points out that `-Xint` may be equivalent to `-XX:TieredStopAtLevel=0`,
+and that by trying `-XX:TieredStopAtLevel=3` we can rule out C1.
+
+    If using Surefire and JUnit, we can specify `mvn test -DargLine="-XX:TieredStopAtLevel=3"`.
 
 ## Testing Results
 
@@ -65,6 +70,9 @@ Tested on macOS Catalina (10.15.6) with Intel Core i9. Similar results have also
 | 14.0.2+12     | J9         | Yes   | Yes    |
 | (jdk.java.net) 15+36-1562    | HotSpot    | No    | **FAIL**   |
 | (jdk.java.net) 15+36-1562    | HotSpot    | Yes   | Yes    |
+
+The tests that fail are all HotSpot based JDK 12 - 15. Passing the argument `-Xint` or `-XX:TieredStopAtLevel=3` causes
+the tests those tests to pass, which suggests the issue may be in the C2 compiler. 
 
 ## Travis CI results
 

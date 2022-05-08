@@ -39,7 +39,7 @@ and that by trying `-XX:TieredStopAtLevel=3` we can rule out C1.
 
     If using Surefire and JUnit, we can specify `mvn test -DargLine="-XX:TieredStopAtLevel=3"`.
 
-* We have likely discovered a regress in HotSpot C2 on Java 12+, so here is the bug report: [JDK-8253191](https://bugs.openjdk.java.net/browse/JDK-8253191).
+* We have likely discovered a regression in HotSpot C2 on Java 12+, so here is the bug report: [JDK-8253191](https://bugs.openjdk.java.net/browse/JDK-8253191).
 
 ## Testing Results
 
